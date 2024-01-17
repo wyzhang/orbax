@@ -65,6 +65,8 @@ class ValidationManager:
         sequence of batch inputs to validate all signatures.
     """
     self._jax_methods = jax_methods
+    print(f'wyzhang: validation manager init jax_methods={jax_methods}')
+    print(type(jax_methods))
     self._serving_configs = serving_configs
     self._model_inputs = model_inputs
 

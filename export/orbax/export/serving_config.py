@@ -197,6 +197,8 @@ class ServingConfig:
 
       return inference_fn
 
+    print(f'wyzhang: bind infer_step_fns={infer_step_fns}')
+    print(type(infer_step_fns))
     func_map = {}
     infer_fn_with_processors = make_inference_fn(
         self.get_infer_step(infer_step_fns)
