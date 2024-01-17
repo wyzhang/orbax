@@ -98,6 +98,7 @@ class ServingConfig:
     """
     print(f'wyzhang: I am here')
     print(f'wyzhang: infer_step_fns={infer_step_fns}')
+    print(type(infer_step_fns))
     if callable(infer_step_fns):
       print(f'wyzhang: is callable')
       return infer_step_fns
