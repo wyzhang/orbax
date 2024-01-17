@@ -96,6 +96,7 @@ class ServingConfig:
     Returns:
       method: the corresponding jax method of current ServingConfig.
     """
+    print(f'wyzhang: I am here')
     if callable(infer_step_fns):
       return infer_step_fns
 
